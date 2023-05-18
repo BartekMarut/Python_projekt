@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Znajdź PKD</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="form-wrapper">
+      <form action="/api" method="get">
+        <label for="pkd_number">Pkd number: </label>
+        <input
+          pkdNumber="pkd_number"
+          type="text"
+          name="pkd_number"
+          value="" />
+        <input type="submit" value="Search" />
+      </form>
+    </div>
+    
+  </div>
+</body>
+</html>
+
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+}  
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 194, 204);
+  font-family: sans-serif;
+}
+
+
+label,
+input {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+input {
+  cursor: pointer;
+}
+.input:hover,
+.input:focus {
+  background-color: white;
+}
+</style>
